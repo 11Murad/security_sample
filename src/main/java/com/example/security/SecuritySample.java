@@ -9,13 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Set;
 
 @SpringBootApplication
-public class SecurityApplication implements CommandLineRunner {
+public class SecuritySample implements CommandLineRunner {
 	private final UserService userService;
-    public SecurityApplication(UserService userService) {
+    public SecuritySample(UserService userService) {
         this.userService = userService;
     }
+
     public static void main(String[] args) {
-		SpringApplication.run(SecurityApplication.class, args);
+		SpringApplication.run(SecuritySample.class, args);
 	}
 
 	@Override
